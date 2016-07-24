@@ -3,11 +3,11 @@
   <type type="xld.UpdateDictionary"  extends="xlrelease.PythonScript">
       <property name="scriptLocation" default="xld/UpdateDictionary.py"
       hidden="true" />
-          <property name="xldHost" category="input" label="xldHost" />
+          <property name="xldHost" category="input" label="XLD Host" />
               <property name="xldUser" category="input" label="XLD Username" />
               <property name="xldPassword" category="input" password="true" label="XLD Password" />
-              <property name="dictionaryId" category="input"  />
+              <property name="dictionaryId" category="input" description="DictionaryID in XLD for specific environment- Example : Environments/DEV/ELKGROVE/Dictionaries/APPNAME_VERSION" />
               <property name="taskColor" hidden="true" default="#009CDB"/>
-	            <property name="parameters" category="input" default="" required="false" description="A dictionary with key value pairs , comma separated- Ex:key1=value1,key2=value2" />
+	            <property name="parameters" category="input" default="" required="false" description="Dictionary keys with values, comma separated- Example:key1=value1,key2=value2" label="Dictionaries" />
   </type>
 </synthetic>
